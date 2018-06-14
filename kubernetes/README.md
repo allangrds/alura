@@ -20,6 +20,17 @@ Remove o pod "application".
 
 ---
 
+##### kubectl create -f deployment.yaml
+Peço para criar um objeto deployment que está no arquivo deployment.yml.
+
+
+---
+
+##### kubectl get deployments
+Mostra os deployments em execução.
+
+---
+
 ##### text
 text
 
