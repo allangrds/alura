@@ -20,7 +20,7 @@ Remove o pod "application".
 
 ---
 
-##### kubectl create -f deployment.yaml
+##### kubectl create -f deployment.yml
 Peço para criar um objeto deployment que está no arquivo deployment.yml.
 
 
@@ -46,10 +46,24 @@ Start servidor local para gerenciar e ver informações do cluster
 
 ---
 
+##### kubectl create -f application-service.yml
+Peço para criar um objeto service que está no arquivo application-service.yml.
+
+---
+
+##### kubectl get services
+Mostra os services ativos
+
+---
+
+##### minikube service application-service --url
+Retorna a url de acesso do service
+
+---
+
 ##### text
 text
 
----
 
 ## Outros
 Link do curso [aqui](wee)
