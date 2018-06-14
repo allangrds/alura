@@ -31,6 +31,21 @@ Mostra os deployments em execução.
 
 ---
 
+##### kubectl describe pods
+Mostra informações dos pods ativos
+
+---
+
+##### kubectl describe pods | grep IP
+Mostra IP dos pods ativos
+
+---
+
+##### minikube dashboard
+Start servidor local para gerenciar e ver informações do cluster
+
+---
+
 ##### text
 text
 
