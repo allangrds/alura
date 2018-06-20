@@ -1,0 +1,22 @@
+apiVersion: apps/v1beta1
+kind: StatefulSet
+metadata:
+  name: database-statefulset
+spec:
+  template:
+    metadata:
+      labels:
+        name: database
+    spec:
+      containers:
+        - name: database-container
+          image: mysql
+          ports:
+            - containerPort: 3306
+          env:
+            - name: MYSQL_DATABASE
+              value: "loja"
+            - name: MYSQL_USER
+              value: "root"
+            - name: MYSQL_ALLOW_EMPTY_PASSWORD
+              value: "1"
