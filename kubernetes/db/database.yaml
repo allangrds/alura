@@ -5,7 +5,7 @@ metadata:
 spec:
   containers:
     - name: database-container
-      image: mysql:5.7
+      image: mysql:5.7.19
       ports:
         - containerPort: 3306
       env:
