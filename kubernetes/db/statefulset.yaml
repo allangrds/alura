@@ -20,3 +20,10 @@ spec:
               value: "root"
             - name: MYSQL_ALLOW_EMPTY_PASSWORD
               value: "1"
+          volumeMounts:
+            - name: database-volume
+              mountPath: /var/lib/mysql
+    volumes:
+      - name: database-volume
+        persistentVolumeClaim:
+          claimName: database-permissions

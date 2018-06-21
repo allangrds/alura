@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: database-permissions
+spec:
+  accessModes:
+    - ReadWriteOnce
+  requests:
+    - storage: 3Gi
