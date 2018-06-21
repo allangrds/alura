@@ -5,8 +5,8 @@ O comando pode ser usado para iniciar seu cluster. Esse comando cria e configura
 
 ---
 
-##### kubectl create -f application.yml
-Peço para criar um objeto pod que está no arquivo application.yml.
+##### kubectl create -f application.yaml
+Peço para criar um objeto pod que está no arquivo application.yaml.
 
 ---
 
@@ -20,8 +20,8 @@ Remove o pod "application".
 
 ---
 
-##### kubectl create -f deployment.yml
-Peço para criar um objeto deployment que está no arquivo deployment.yml.
+##### kubectl create -f deployment.yaml
+Peço para criar um objeto deployment que está no arquivo deployment.yaml.
 
 
 ---
@@ -46,8 +46,8 @@ Start servidor local para gerenciar e ver informações do cluster
 
 ---
 
-##### kubectl create -f application-service.yml
-Peço para criar um objeto service que está no arquivo application-service.yml.
+##### kubectl create -f application-service.yaml
+Peço para criar um objeto service que está no arquivo application-service.yaml.
 
 ---
 
@@ -61,9 +61,23 @@ Retorna a url de acesso do service
 
 ---
 
-##### text
-text
+##### kubectl create -f statefulset.yaml
+Peço para criar um objeto statefulset que está no arquivo statefulset.yaml.
 
+---
+
+##### kubectl create -f database-service.yaml
+Peço para criar um objeto service que está no arquivo database-service.yaml.
+
+---
+
+##### kubectl create -f permissions.yaml
+Peço para criar um objeto contendo permissões ao pod.
+
+---
+
+##### kubectl exec -it database-statefulset-0 sh
+Executa o shell de um determinado objeto
 
 ## Outros
 Link do curso [aqui](wee)
